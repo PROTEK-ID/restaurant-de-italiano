@@ -261,6 +261,25 @@ section#contact {
 }
 /* contact section end */
 
+/* footer start */
+footer {
+	color: white;
+	background-color: var(--primary);
+}
+footer .footer-top {
+	padding: 2rem;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 1rem;
+}
+footer .footer-bottom {
+	padding: .5rem;
+	color: var(--textLight);
+	background-color: var(--secondary);
+	text-align: center;
+}
+/* footer end */
+
 /* mobile screen */
 @media screen and (max-width: 600px) {
 	nav .brand {
@@ -281,6 +300,10 @@ section#contact {
 	}
 
 	section#contact {
+		flex-direction: column;
+	}
+
+	footer .footer-top {
 		flex-direction: column;
 	}
 }
